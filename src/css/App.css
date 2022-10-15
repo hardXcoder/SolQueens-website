@@ -35,7 +35,7 @@ footer {
 }
 
 .homeContainer {
-  min-height: calc(100vh - 12vh);
+  min-height: calc(100vh - 105px - 96px);
   background-color: rgb(19, 15, 34);
   display: flex;
   justify-content: center;
