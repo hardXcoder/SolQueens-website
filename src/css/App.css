@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundPaper {
+  background-color: black;
+  font-size: 16px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  height: 96px;
+  background-color: rgb(19, 15, 34);
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono";
+  border-bottom: 1px solid #232740;
+  top: 0;
+  z-index: 20;
+  position: sticky;
+  padding: 0 96px;
+}
+
+footer {
+  display: flex;
+  height: 105px;
+  background-color: rgb(25, 17, 71);
+  color: #ccd2e9;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+}
+
+.homeContainer {
+  min-height: calc(100vh - 12vh);
+  background-color: rgb(19, 15, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Landing_marquee__rdSvL {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  z-index: inherit;
+}
+
+.Landing_track__NkqOI {
+  -webkit-animation: Landing_marquee__rdSvL 128s linear infinite;
+  animation: Landing_marquee__rdSvL 128s linear infinite;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  z-index: inherit;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.min-w-\[150px\] {
+  min-width: 150px;
+}
+
+.min-h-\[46px\] {
+  min-height: 46px;
+}
+
+.flex {
+  display: flex;
+}
+
+.degraded {
+  background: linear-gradient(
+    89.46deg,
+    #5362e9 9.25%,
+    #5362e9 51.1%,
+    #b127c8 92.85%
+  );
+}
+
+.font-\[700\],
+.font-bold {
+  font-weight: 700;
+}
+
+.font-mono {
+  font-family: Roboto Mono, ui-monospace;
+}
+
+.logo {
+  font-size: 40px;
+  font-family: "Montez";
+  color: hotpink;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.navConnectBtn {
+  background-image: linear-gradient(
+    to top,
+    #ff9a9e 0%,
+    #e3a400 99%,
+    #e3a400 100%
+  );
+}
+
+.raffleImage {
+  height: 30vw;
+  margin: auto;
+
+  animation-name: spin;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .homeContainer {
+    min-height: calc(100vh - 8vh - 16vh);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    background-color: black;
+    color: rgb(19, 15, 34);
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Comforter Brush";
+    font-size: 5vh;
+  }
+
+  .raffleImage {
+    height: 70vw;
+    margin: 12vh auto;
+
+    animation-name: spin;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid hotpink; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  font-family: "Pacifico";
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes undoTyping {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: hotpink;
+  }
+}
